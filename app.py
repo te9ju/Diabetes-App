@@ -170,9 +170,9 @@ st.pyplot(fig_dpf)
 st.subheader('Your Report: ')
 output=''
 if user_result[0]==0:
-  output = 'You are not Diabetic'
+  output = 'You are not Diabetic!'
 else:
-  output = 'You are Diabetic'
+  output = 'You are Diabetic. Seek medical attention as soon as possible. Visit http://diabetesindia.com/ for more info.'
 st.title(output)
 st.subheader('Accuracy: ')
 st.write(str(accuracy_score(y_test, rf.predict(x_test))*100)+'%')
